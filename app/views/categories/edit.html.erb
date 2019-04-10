@@ -1,12 +1,12 @@
 <h1>Edit Category</h1>
 
-<%= form_for(@category) do |f| %>
-  <div class="field">
-    <%= f.label :name, 'Category Name:' %><br>
-    <%= f.text_field :name %>
-  </div>
+<%= form_for @category do |f| %>
 
-  <div class="actions">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+
+
+
     <%= f.submit %>
-  </div>
+
 <% end %>
